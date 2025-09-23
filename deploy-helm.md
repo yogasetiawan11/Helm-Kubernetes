@@ -17,6 +17,7 @@ helm repo update
 ```bash
 helm install my-nginx bitnami/nginx
 ```
+
 ## Verify the installation:
 ```bash
 helm list
@@ -28,10 +29,12 @@ kubectl get pods
 ```bash
 helm show values bitnami/nginx
 ```
+
 ## To preview the manifest without deploying:
 ```bash
 helm template my-nginx bitnami/nginx
 ```
+
 ## 2. Upgrading NGINX using Helm
 To upgrade the NGINX release, we can change parameters or update the chart version.
 
@@ -40,10 +43,12 @@ To upgrade the NGINX release, we can change parameters or update the chart versi
 ```bash
 helm upgrade my-nginx bitnami/nginx --set service.type=NodePort
 ```
+
 ## Check the upgrade status:
 ```bash
 helm status my-nginx
 ```
+
 ## 3. Uninstalling NGINX using Helm
 To remove the NGINX release from the cluster:
 
@@ -52,6 +57,7 @@ To remove the NGINX release from the cluster:
 ```bash
 helm uninstall my-nginx
 ```
+
 ## Verify the uninstallation:
 
 ```bash

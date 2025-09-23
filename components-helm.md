@@ -7,6 +7,7 @@ A Helm chart is a collection of files that describe a set of Kubernetes resource
 - templates/: Directory containing Kubernetes manifests as templates.
 - charts/: Directory for chart dependencies.
 - README.md: Optional documentation.
+
 ## Creating a Chart:
 ```bash
 helm create myapp
@@ -26,14 +27,17 @@ A Helm repository is a place where Helm charts are stored and shared. It’s sim
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
+
 ## Listing Repositories:
 ```bash
 helm repo list
 ```
+
 ## Updating Repositories:
 ```bash
 helm repo update
 ```
+
 Repositories make it easy to organize, store, and distribute Helm charts, and they support versioning, so you can choose specific versions of a chart to install.
 
 # 3. Helm Releases
@@ -48,18 +52,22 @@ helm install myapp ./myapp
 ```bash
 helm list
 ```
+
 ## Upgrading a Release:
 ```bash
 helm upgrade myapp ./myapp
 ```
+
 ## Rolling Back a Release:
 ```bash
 helm rollback myapp 1
 ```
+
 ## Deleting a Release:
 ```bash
 helm uninstall myapp
 ```
+
 Releases are useful for tracking deployed versions, performing rollbacks in case of failures, and managing multiple instances of the same chart.
 
 ## Summary
