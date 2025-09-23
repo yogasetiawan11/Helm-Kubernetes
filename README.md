@@ -52,4 +52,4 @@ Helm handles dependencies between Kubernetes components, like ensuring a databas
 
 # Heml in K8s
 Kubernetes is a complex system with many component parts (pods, deployments, services, etc.). Helm can simplifies the process by packaging everything into reusable charts. It’s like having a one click install for your entire application stack instead of manually creating each component.
-If you don't have Helm Installed, you might have to write a script for installing each Kuberenetes controller. For team A need ArgoCD for specific version like 2.13 and also need specific replica for your Dev environment It will be overwelme if you create this script one by one for different team. that why Helm comes to solve this problem.
+If you don't have Helm Installed, you might have to write a script for installing each Kuberenetes controller. For team A need ArgoCD for specific version like 2.13 and also need specific replica for your Dev environment It will be overwelmed if you create this script one by one for different team. that why Helm comes to solve this problem.
